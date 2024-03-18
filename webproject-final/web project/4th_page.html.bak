@@ -1,0 +1,39 @@
+<html>
+<center>
+<body = style = "color : #EDE9F7 ; font-family: 'El Messiri' ;background-color: #000000 ">
+<title> تساؤلات  </title> 
+
+
+<table width "1000" cellpadding ="15">   
+
+
+<tr >
+<link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet"> </link>
+
+ <p align= "center" style = " font-size :50px "> هل سبق ورأيت " ستيڤ " ؟  </p>
+
+</tr> 
+
+<tr>
+<p align= "center" style = " font-size :20px " > .اطلق الفلكيون أسم " ستيڤ " على ظاهرة غريبة ظهرت اول مره في عام 1860 وهي معروفة حالياَ باسم الشفق القطبي <br> <br>    
+وهو عبارة عن مزيج من الألوان التي تتشكل على القطبين الشمالي والجنوبي للكرة الأرضية ويعرف أيضاً بالفجر القطبي أو الأضواء القطبية
+ </p>
+
+</tr>
+
+<tr>
+
+
+<td align= "center" width="300" > <img src ="Polarlicht_2.jpg"  width ="400" height="400" > </td>
+<td align= "center" width="300" > <img src ="Aurora_Island.jpg"  width ="400" height="400" > </td>
+<td align= "center" width="300" > <img src ="Polarlicht2012.jpg"  width ="400" height="400" > </td>
+
+</tr>
+
+
+
+</table>
+</body>
+</center>
+
+</html>

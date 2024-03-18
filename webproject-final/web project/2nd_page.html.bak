@@ -1,0 +1,33 @@
+<html>
+<center>
+<body >
+<head>   
+   <link rel="stylesheet" href="revans.css">
+</head>
+<title> تساؤلات  </title> 
+
+
+<table width "1000" cellpadding ="15">   
+<tr>
+<link href="https://fonts.googleapis.com/css?family=El+Messiri&display=swap" rel="stylesheet"> </link>
+
+<td  align= "center" style = " font-size :50px "><b> كيف تبدو الأرض في هذه اللحظة ؟ </b> </td>
+
+</tr> 
+
+<tr>
+<td width="500">
+
+<p align= "center"   style = " font-size :20px ">  .محطة الفضاء الدولية بتجاوب على تساؤلك عن طريق هذا البث اللي ينقل صورة مباشرة للأرض من الفضاء الخارجي  <br ><br><b> ♡ مشاهدة ممتعة </b>  </p>
+
+<iframe width="1300" height="600" src="https://www.youtube.com/embed/86YLFOog4GM"  ; frameborder="0" allowfullscreen></iframe>
+
+
+</td>
+</tr>
+
+</table>
+</body>
+</center>
+
+</html>

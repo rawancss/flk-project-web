@@ -1,0 +1,90 @@
+*{
+     margin: 0; padding: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: amiri;
+    
+}
+h1{
+    font-family: amiri;
+    font-size: 40PX;
+    color: white;
+}
+body{
+ 
+	background-color: black;
+  background-image: url(stars.png);
+  background-blend-mode: screen;
+
+}
+header{
+    
+    position: fixed;
+    top;0; left: 0; right: 0;
+     background: linear-gradient(#2b1055,#000);
+
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+
+header .logo{
+    font-size: 73px;
+    font-family: amiri;
+    color: aliceblue;
+    
+}
+header .nav ul{
+     font-family: SC_DUBAI;
+   
+    list-style: none;
+}
+header .nav ul li {
+    
+    position: relative;
+    float:left;
+}
+header .nav ul li  a{
+   font-size: 20px;
+    padding: 20px;
+    color: wheat;
+    display: block;
+    border-radius: 20px;padding: 6px 15px;
+    
+}
+header .nav ul li a:hover{
+    background: #fff;
+    color: black;
+     border-radius: 20px;padding: 6px 15px;
+       cursor: pointer;
+    box-shadow: 0 0 5px #ffc000,0 0 20px #ffc000,0 0 60px #ffc000;
+}
+header .nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+     border-radius: 20px;padding: 6px 15px;
+    display: none;   
+}
+header .nav ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgb(0,0,0,.1);
+    
+
+} 
+header .nav ul li:focus-within>ul,
+header .nav ul li:hover >ul
+
+{
+    
+    display: initial;
+}
+
+
+
+
+

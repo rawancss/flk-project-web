@@ -1,0 +1,29 @@
+body{
+	 background-image: url("stars.png");
+
+    background: linear-gradient(#2b1055,#7597de);
+	
+	
+font-family: 'El Messiri'
+	 background-blend-mode: screen;
+	 
+}
+table{
+	width "1000" cellpadding ="15"
+
+}
+
+td {
+  text-align: center;
+  width="500
+  font-size:20px;
+  		color:antiquewhite;
+
+	}
+	.important{
+		color:antiquewhite;
+		align= "center" ;
+	font-size :30px ;
+bold	;
+	}
+	

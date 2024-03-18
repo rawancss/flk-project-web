@@ -1,0 +1,187 @@
+<html><head>
+<meta name="viewport" content="width=device-width,initial-scale=">   <link rel="stylesheet" href="trycss.css">
+
+     <title>فَلَك</title>
+  <link rel="icon" href="ff.png">
+       <link rel="stylesheet" href="css/style.css">
+
+<!-- jQuery library -->
+<script src="js/jquery.min.js"></script>
+    </head>
+<body>
+     
+<header>
+      <a href="home.html"  class="logo">فَلَك</a>
+   
+ <nav class="nav">
+ 
+<ul>
+<li><a href="Arab/Arab.html" class="active">عربيُ أنا</a></li>
+
+<li><a href="#">تساؤلات</a>
+    <ul>
+    <li><a href ="web project/1st_page.html">الثقب الأسود</a></li>
+    <li><a href ="web project/2nd_page.html">الأرض</a></li>
+    <li><a href ="web project/4th_page.html">الشفق القطبي</a></li>
+    <li><a href ="web project/3rd_page.html">رواد الفضاء</a></li>
+    </ul>
+    </li>
+    <li><a href="SOLARSYSTEM/solarsystem.html">المجموعه الشمسه</a>
+        <li><a href="project/project/reham.html">المنتجات</a></li>
+<!--<li><a href="index.html">تواصل</a>
+    
+    </li>-->
+</ul>
+    </nav>
+
+
+</header>
+ <center>
+
+  <section  >
+   
+    <div class="content">
+      <br><br><br>  <br><br><br>  <br><br><br> <h1>"أهلا نحن "فلك
+    <br><p>ليش سمينا نفسنا بهالأسم ؟ وايش اهدافنا ؟ الحين راح تعرف</p>
+    <p>من منطلق (كل في فلك يسبحون)خرجنا نحن وهدفنا هو تجسيد اهتمامنا بالفضاء</p>  
+       <p>في شكل هذا الموقع المطلوب كمشروع لمقرر هندسة الويب</p> 
+       <p>يتطرق موقعنا لعدة مواضيع وعناوين بذلنا فيها كل ماتعلمنا خلال هذه المرحله الشيقه </p>
+        <p> ومتأكدين أنك رح تستمتع معنا في هذي الرحله </p>
+        <p>شكرا على زيارتكم ولاتنسو</p>
+        <p>كونوا مثل "فلك"طموحكم عنان الفضاء </p>
+        </h1>
+         
+       
+  </div>
+      
+  
+ </section>
+  
+     </center>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <br><br><br>
+    
+    
+    
+     <div class="container">
+    <h2>رأيك يهمنا تواصل معنا </h2>
+    <br><br>
+    <!-- Trigger/Open The Modal -->
+    <button id="mbtn" class="btn btn-primary turned-button">Contact Us</button><br><br>
+ <!--   <button   id="mbtn" class="btn btn-primary turned-button"><a href ="home.html" style="text-decoration: none; color: white; ">الرجوع للصفحه الرئيسيه</a> </button>-->
+    
+    <!-- The Modal -->
+    <div id="modalDialog" class="modal">
+        <div class="modal-content animate-top">
+            <div class="modal-header">
+                <h5 class="modal-title">Contact Us</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <form method="post" id="contactFrm">
+            <div class="modal-body">
+                <!-- Form submission status -->
+                <div class="response"></div>
+                
+                <!-- Contact form -->
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required="">
+                </div>
+                <div class="form-group">
+                    <label>Message:</label>
+                    <textarea name="message" id="message" class="form-control" placeholder="Your message here" rows="6"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('#contactFrm').submit(function(e){
+        e.preventDefault();
+        $('.modal-body').css('opacity', '0.5');
+        $('.btn').prop('disabled', true);
+        
+        $form = $(this);
+        $.ajax({
+            type: "POST",
+            url: 'ajax_submit.php',
+            data: 'contact_submit=1&'+$form.serialize(),
+            dataType: 'json',
+            success: function(response){
+                if(response.status == 1){
+                    $('#contactFrm')[0].reset();
+                    $('.response').html('<div class="alert alert-success">'+response.message+'</div>');
+                }else{
+                    $('.response').html('<div class="alert alert-danger">'+response.message+'</div>');
+                }
+                $('.modal-body').css('opacity', '');
+                $('.btn').prop('disabled', false);
+            }
+        });
+    });
+});
+
+
+/*
+ * Modal popup
+ */
+// Get the modal
+var modal = $('#modalDialog');
+
+// Get the button that opens the modal
+var btn = $("#mbtn");
+
+// Get the <span> element that closes the modal
+var span = $(".close");
+
+$(document).ready(function(){
+    // When the user clicks the button, open the modal 
+    btn.on('click', function() {
+        modal.show();
+    });
+    
+    // When the user clicks on <span> (x), close the modal
+    span.on('click', function() {
+        modal.hide();
+    });
+});
+
+// When the user clicks anywhere outside of the modal, close it
+$('body').bind('click', function(e){
+    if($(e.target).hasClass("modal")){
+        modal.hide();
+    }
+});
+</script>
+
+        </body>
+    </html>

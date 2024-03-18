@@ -1,0 +1,77 @@
+body{
+	background-color: black;
+  background-image: url(stars.png);
+  background-blend-mode: screen;
+
+    
+    
+	 
+}
+.font-face {
+  font-family: 'El Messiri';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/elmessiri/v14/K2FhfZBRmr9vQ1pHEey6GIGo8_pv3myYjuXwe55ijDz-oQ.woff2) format('woff2');
+  unicode-range: U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;
+    
+}
+.logo-area a {
+    
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    font-weight: 100;
+font-family: Amiri Regular;}
+table{
+	width "1000" cellpadding ="15"
+}
+
+
+td {
+  text-align: center;
+  width="500
+    
+    font-family:'El Messiri';
+    color:antiquewhite;
+    
+    font-style: normal;
+  font-weight: normal; 
+    
+
+    }
+
+
+.tr {
+  text-align: center;
+  width="500
+    font-family:'El Messiri';
+    color:antiquewhite;
+        font-family:'El Messiri';
+       font-style: normal;
+  font-weight: normal; 
+    
+
+    }
+
+
+	.important{
+		color:antiquewhite;
+		align= "center" ;
+         font-family:'El Messiri';
+	font-size :30px ;
+font-weight: bold;;
+        font-style: normal;
+        
+        
+	}
+
+
+
+
+
+
+
+
+
